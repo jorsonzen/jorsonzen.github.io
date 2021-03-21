@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MySQL常见问题 | Jorson</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/images/icons/logo.png">
+    <link rel="apple-touch-icon" href="/images/icons/logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <script type="text/javascript" src="/assets/js/load.js"></script>
+    <meta name="description" content="Row 147 was cut by GROUP_CONCAT()">
+    <meta name="twitter:title" content="MySQL常见问题">
+    <meta name="twitter:description" content="Row 147 was cut by GROUP_CONCAT()">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="www.wmlot.com/SQL/MySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="MySQL常见问题">
+    <meta property="og:description" content="Row 147 was cut by GROUP_CONCAT()">
+    <meta property="og:url" content="www.wmlot.com/SQL/MySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.html">
+    <meta property="og:site_name" content="Jorson">
+    <meta itemprop="name" content="MySQL常见问题">
+    <meta itemprop="description" content="Row 147 was cut by GROUP_CONCAT()">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/images/icons/logo.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="keywords" content="bajins,vue,vuepress,vuepress-theme,theme,主题,vuepress主题,blog,vuepress-blog,java,python,shell,sql,golang,script,shell script,nginx,windows,去广告,androd,google drive,one drive,idea,eclipse,git,小程序">
+    <meta name="referrer" content="never">
+    
+    <link rel="preload" href="/assets/css/0.styles.7d69513a.css" as="style"><link rel="preload" href="/assets/js/app.69a72258.js" as="script"><link rel="preload" href="/assets/js/3.4c3be2cf.js" as="script"><link rel="preload" href="/assets/js/52.ec6b8f64.js" as="script"><link rel="preload" href="/assets/js/4.a1bdcad9.js" as="script"><link rel="prefetch" href="/assets/js/10.97b71f1d.js"><link rel="prefetch" href="/assets/js/11.63d25289.js"><link rel="prefetch" href="/assets/js/12.8f3f5584.js"><link rel="prefetch" href="/assets/js/13.845ca3ec.js"><link rel="prefetch" href="/assets/js/14.c1b9233c.js"><link rel="prefetch" href="/assets/js/15.3d8ad173.js"><link rel="prefetch" href="/assets/js/16.2a8013f4.js"><link rel="prefetch" href="/assets/js/17.dec1e56f.js"><link rel="prefetch" href="/assets/js/18.322b3784.js"><link rel="prefetch" href="/assets/js/19.f3b664b5.js"><link rel="prefetch" href="/assets/js/20.d4cca4a6.js"><link rel="prefetch" href="/assets/js/21.7348c6cc.js"><link rel="prefetch" href="/assets/js/22.8c467fa0.js"><link rel="prefetch" href="/assets/js/23.04bf11fb.js"><link rel="prefetch" href="/assets/js/24.2b56db1d.js"><link rel="prefetch" href="/assets/js/25.15ffe455.js"><link rel="prefetch" href="/assets/js/26.7c5618fb.js"><link rel="prefetch" href="/assets/js/27.37f72080.js"><link rel="prefetch" href="/assets/js/28.e6435508.js"><link rel="prefetch" href="/assets/js/29.498ab6fe.js"><link rel="prefetch" href="/assets/js/30.a5940da8.js"><link rel="prefetch" href="/assets/js/31.bae321e2.js"><link rel="prefetch" href="/assets/js/32.88a51071.js"><link rel="prefetch" href="/assets/js/33.9a496be7.js"><link rel="prefetch" href="/assets/js/34.130b9497.js"><link rel="prefetch" href="/assets/js/35.13f41192.js"><link rel="prefetch" href="/assets/js/36.7bc4ff21.js"><link rel="prefetch" href="/assets/js/37.92f77ed0.js"><link rel="prefetch" href="/assets/js/38.9d28c62b.js"><link rel="prefetch" href="/assets/js/39.ddbcb369.js"><link rel="prefetch" href="/assets/js/40.fcab878f.js"><link rel="prefetch" href="/assets/js/41.319898e1.js"><link rel="prefetch" href="/assets/js/42.6b2acdf4.js"><link rel="prefetch" href="/assets/js/43.5c21b50a.js"><link rel="prefetch" href="/assets/js/44.a784b3b8.js"><link rel="prefetch" href="/assets/js/45.9284f3ae.js"><link rel="prefetch" href="/assets/js/46.7a9c5b5d.js"><link rel="prefetch" href="/assets/js/47.da956b59.js"><link rel="prefetch" href="/assets/js/48.9386d509.js"><link rel="prefetch" href="/assets/js/49.96bdd00c.js"><link rel="prefetch" href="/assets/js/5.94e54631.js"><link rel="prefetch" href="/assets/js/50.d2460cf9.js"><link rel="prefetch" href="/assets/js/51.7793a307.js"><link rel="prefetch" href="/assets/js/53.d008b9e8.js"><link rel="prefetch" href="/assets/js/54.f3c36064.js"><link rel="prefetch" href="/assets/js/55.9dd7d560.js"><link rel="prefetch" href="/assets/js/56.83f92d61.js"><link rel="prefetch" href="/assets/js/57.152366cf.js"><link rel="prefetch" href="/assets/js/58.1e2a0d9e.js"><link rel="prefetch" href="/assets/js/59.b8e7f4bd.js"><link rel="prefetch" href="/assets/js/6.363631e8.js"><link rel="prefetch" href="/assets/js/60.2610126a.js"><link rel="prefetch" href="/assets/js/61.ccfb76aa.js"><link rel="prefetch" href="/assets/js/62.a02b37c5.js"><link rel="prefetch" href="/assets/js/63.e736565c.js"><link rel="prefetch" href="/assets/js/64.1e9004ce.js"><link rel="prefetch" href="/assets/js/65.e9f20429.js"><link rel="prefetch" href="/assets/js/66.3645c2fa.js"><link rel="prefetch" href="/assets/js/67.c5fc377c.js"><link rel="prefetch" href="/assets/js/68.e6f118f1.js"><link rel="prefetch" href="/assets/js/69.f99c13f4.js"><link rel="prefetch" href="/assets/js/7.85454bf8.js"><link rel="prefetch" href="/assets/js/70.3179c494.js"><link rel="prefetch" href="/assets/js/71.6c9e689f.js"><link rel="prefetch" href="/assets/js/72.f5ca6287.js"><link rel="prefetch" href="/assets/js/73.24f0cf9d.js"><link rel="prefetch" href="/assets/js/74.08c5cd09.js"><link rel="prefetch" href="/assets/js/75.b279bffe.js"><link rel="prefetch" href="/assets/js/76.9d11ac2e.js"><link rel="prefetch" href="/assets/js/77.734455f2.js"><link rel="prefetch" href="/assets/js/78.e28ff317.js"><link rel="prefetch" href="/assets/js/79.2f4c3212.js"><link rel="prefetch" href="/assets/js/8.4afa692f.js"><link rel="prefetch" href="/assets/js/80.6de8b9c5.js"><link rel="prefetch" href="/assets/js/81.c5758f8a.js"><link rel="prefetch" href="/assets/js/82.1011c61a.js"><link rel="prefetch" href="/assets/js/83.47960021.js"><link rel="prefetch" href="/assets/js/84.74b46250.js"><link rel="prefetch" href="/assets/js/85.95913807.js"><link rel="prefetch" href="/assets/js/86.3ab39af9.js"><link rel="prefetch" href="/assets/js/9.3bbdc623.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.58a4c07d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7d69513a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/icons/logo.png" alt="Jorson" class="logo"> <span class="site-name can-hide">Jorson</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Go/" class="nav-link">
+  Go
+</a></div><div class="nav-item"><a href="/IDE/" class="nav-link">
+  IDE
+</a></div><div class="nav-item"><a href="/Java/" class="nav-link">
+  Java
+</a></div><div class="nav-item"><a href="/Other/" class="nav-link">
+  Other
+</a></div><div class="nav-item"><a href="/SQL/" class="nav-link router-link-active">
+  SQL
+</a></div><div class="nav-item"><a href="/Shell/" class="nav-link">
+  Shell
+</a></div><div class="nav-item"><a href="/System/" class="nav-link">
+  System
+</a></div><div class="nav-item"><a href="/Web/" class="nav-link">
+  Web
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多资源" class="dropdown-title"><span class="title">更多资源</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多资源" class="mobile-dropdown-title"><span class="title">更多资源</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.woetu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  WeChat小程序
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://github.com/woytu/tool-gin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  获取XShell
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://gd.bajins.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GoogleDrive
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://od.bajins.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  OneDrive
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/files.html" class="nav-link">
+  文件
+</a></li><li class="dropdown-subitem"><a href="/Other/Bookmarks.html" class="nav-link">
+  书签锦集
+</a></li><li class="dropdown-subitem"><a href="/Other/Windows软件.html" class="nav-link">
+  Windows软件
+</a></li><li class="dropdown-subitem"><a href="/Other/Markdown.html#工具" class="nav-link">
+  Markdown工具
+</a></li></ul></li></ul></div></div> <a href="https://github.com/woytu/notes-vuepress" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Go/" class="nav-link">
+  Go
+</a></div><div class="nav-item"><a href="/IDE/" class="nav-link">
+  IDE
+</a></div><div class="nav-item"><a href="/Java/" class="nav-link">
+  Java
+</a></div><div class="nav-item"><a href="/Other/" class="nav-link">
+  Other
+</a></div><div class="nav-item"><a href="/SQL/" class="nav-link router-link-active">
+  SQL
+</a></div><div class="nav-item"><a href="/Shell/" class="nav-link">
+  Shell
+</a></div><div class="nav-item"><a href="/System/" class="nav-link">
+  System
+</a></div><div class="nav-item"><a href="/Web/" class="nav-link">
+  Web
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多资源" class="dropdown-title"><span class="title">更多资源</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多资源" class="mobile-dropdown-title"><span class="title">更多资源</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.woetu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  WeChat小程序
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://github.com/woytu/tool-gin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  获取XShell
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://gd.bajins.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GoogleDrive
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://od.bajins.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  OneDrive
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/files.html" class="nav-link">
+  文件
+</a></li><li class="dropdown-subitem"><a href="/Other/Bookmarks.html" class="nav-link">
+  书签锦集
+</a></li><li class="dropdown-subitem"><a href="/Other/Windows软件.html" class="nav-link">
+  Windows软件
+</a></li><li class="dropdown-subitem"><a href="/Other/Markdown.html#工具" class="nav-link">
+  Markdown工具
+</a></li></ul></li></ul></div></div> <a href="https://github.com/woytu/notes-vuepress" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>SQL</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/SQL/MySQL事件.html" class="sidebar-link">MySQL事件</a></li><li><a href="/SQL/MySQL备份恢复数据.html" class="sidebar-link">MySQL备份恢复数据</a></li><li><a href="/SQL/MySQL存储过程.html" class="sidebar-link">MySQL存储过程</a></li><li><a href="/SQL/MySQL安装配置.html" class="sidebar-link">MySQL安装配置</a></li><li><a href="/SQL/MySQL常见问题.html" class="active sidebar-link">MySQL常见问题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/SQL/MySQL常见问题.html#group-concat" class="sidebar-link">GROUP_CONCAT</a></li><li class="sidebar-sub-header"><a href="/SQL/MySQL常见问题.html#自定义函数" class="sidebar-link">自定义函数</a></li><li class="sidebar-sub-header"><a href="/SQL/MySQL常见问题.html#表名未忽略大小写" class="sidebar-link">表名未忽略大小写</a></li></ul></li><li><a href="/SQL/MySQL笔记.html" class="sidebar-link">MySQL笔记</a></li><li><a href="/SQL/" aria-current="page" class="sidebar-link">SQL</a></li><li><a href="/SQL/mysql-udf安装.html" class="sidebar-link">mysql-udf安装</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="mysql常见问题"><a href="#mysql常见问题" class="header-anchor">#</a> MySQL常见问题</h1> <p></p><div class="table-of-contents"><ul><li><a href="#group-concat">GROUP_CONCAT</a><ul><li><a href="#修改默认值大小">修改默认值大小</a></li></ul></li><li><a href="#自定义函数">自定义函数</a><ul><li><a href="#执行自定义函数报错">执行自定义函数报错</a></li></ul></li><li><a href="#表名未忽略大小写">表名未忽略大小写</a><ul><li><a href="#在-mysqld-模块中添加">在[mysqld]模块中添加</a></li><li><a href="#保存并重启mysql">保存并重启mysql</a></li></ul></li></ul></div><p></p> <h2 id="group-concat"><a href="#group-concat" class="header-anchor">#</a> GROUP_CONCAT</h2> <ul><li>使用<code>GROUP_CONCAT</code>出现</li></ul> <blockquote><p>Row 147 was cut by GROUP_CONCAT()</p></blockquote> <ul><li>由于MySQL的<code>GROUP_CONCAT</code>有默认大小值，先查询一下</li></ul> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SHOW</span> VARIABLES <span class="token operator">LIKE</span> <span class="token string">'group_concat_max_len'</span><span class="token punctuation">;</span>
+<span class="token comment">#或者</span>
+<span class="token keyword">SELECT</span> @<span class="token variable">@global.group_concat_max_len</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>默认值为1024</li></ul> <table><thead><tr><th>Variable_name</th> <th>Value</th></tr></thead> <tbody><tr><td>group_concat_max_len</td> <td>1024</td></tr></tbody></table> <h3 id="修改默认值大小"><a href="#修改默认值大小" class="header-anchor">#</a> 修改默认值大小</h3> <ul><li>在MySQL配置文件中添加配置</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment">#-1为最大值或根据实际需求设置长度</span>
+group_concat_max_len <span class="token operator">=</span> -1
+</code></pre></div><ul><li>如果是生产环境下，不能擅自重启MySQL服务，则可以通过语句设置<code>group_concat</code>的作用范围</li></ul> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SET</span> <span class="token keyword">GLOBAL</span> group_concat_max_len<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">SET</span> <span class="token keyword">SESSION</span> group_concat_max_len<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="自定义函数"><a href="#自定义函数" class="header-anchor">#</a> 自定义函数</h2> <h3 id="执行自定义函数报错"><a href="#执行自定义函数报错" class="header-anchor">#</a> 执行自定义函数报错</h3> <blockquote><p><code>This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)</code></p></blockquote> <ul><li>查看是否开启<code>log_bin_trust_function_creators</code></li></ul> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SHOW</span> VARIABLES <span class="token operator">LIKE</span> <span class="token string">'log_bin_trust_function_creators'</span><span class="token punctuation">;</span>
+<span class="token comment">#或者</span>
+<span class="token keyword">SELECT</span> @<span class="token variable">@global.log_bin_trust_function_creators</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>默认关闭</li></ul> <table><thead><tr><th>Variable_name</th> <th>Value</th></tr></thead> <tbody><tr><td>log_bin_trust_function_creators</td> <td>OFF</td></tr></tbody></table> <ul><li>开启</li></ul> <blockquote><p>在MySQL配置文件中<code>[mysqld]</code>节点下加上</p></blockquote> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token assign-left variable">log_bin_trust_function_creators</span><span class="token operator">=</span><span class="token number">1</span>
+</code></pre></div><blockquote><p>如果是生产环境下，不能擅自重启MySQL服务，则可以通过语句开启，重启后无效</p></blockquote> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SET</span> <span class="token keyword">GLOBAL</span> log_bin_trust_function_creators <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token comment">#或者</span>
+<span class="token keyword">SET</span> <span class="token keyword">GLOBAL</span> log_bin_trust_function_creators<span class="token operator">=</span><span class="token boolean">TRUE</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="表名未忽略大小写"><a href="#表名未忽略大小写" class="header-anchor">#</a> 表名未忽略大小写</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">vim</span> /etc/my.cnf
+</code></pre></div><h3 id="在-mysqld-模块中添加"><a href="#在-mysqld-模块中添加" class="header-anchor">#</a> 在[mysqld]模块中添加</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>lower_case_table_names <span class="token operator">=</span> <span class="token number">1</span>
+</code></pre></div><h3 id="保存并重启mysql"><a href="#保存并重启mysql" class="header-anchor">#</a> 保存并重启mysql</h3></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/woytu/notes-vuepress/edit/master//SQL/MySQL常见问题.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2021-03-21 06:48:42</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/SQL/MySQL安装配置.html" class="prev">
+        MySQL安装配置
+      </a></span> <span class="next"><a href="/SQL/MySQL笔记.html">
+        MySQL笔记
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.69a72258.js" defer></script><script src="/assets/js/3.4c3be2cf.js" defer></script><script src="/assets/js/52.ec6b8f64.js" defer></script><script src="/assets/js/4.a1bdcad9.js" defer></script>
+  </body>
+</html>
